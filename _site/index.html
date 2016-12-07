@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Arely Miramontes | Home</title>
+		<!-- Bootstrap Core CSS -->
+		<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+		<!-- Custom Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="/css/creative.css" type="text/css">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="icon" href="assets/images/icon.png">
+		<link href="https://fonts.googleapis.com/css?family=Qwigley" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,500" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	</head>
+	<body id="page-top">
+		<!-- Navbar (sit on top) -->
+		<div class="w3-top">
+		  <ul class="w3-navbar" id="myNavbar">
+		    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+		      <a class="w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+		        <i class="fa fa-bars"></i>
+		      </a>
+		    </li>
+		    <li class="w3-left-align"><a href="/">HOME</a></li>
+		    <li class="w3-hide-small"><a href="/#about"><i class="fa fa-user"></i> ABOUT</a></li>
+		    <li class="w3-hide-small"><a href="/#portfolio"><i class="fa fa-th"></i> PORTFOLIO</a></li>
+		    <li class="w3-hide-small"><a href="/#contact"><i class="fa fa-envelope"></i> CONTACT</a></li>
+				<li class="w3-hide-small w3-right">
+					<a href="/blog.html" class="w3-hover-deep-purple">
+						<i class="fa fa-comments"></i> BLOG
+					</a></li>
+		  </ul>
+
+		  <!-- Navbar on small screens -->
+		  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+		    <ul class="w3-navbar w3-left-align w3-white">
+		      <li><a href="/#about" onclick="toggleFunction()">ABOUT</a></li>
+		      <li><a href="/#portfolio" onclick="toggleFunction()">PORTFOLIO</a></li>
+		      <li><a href="/#contact" onclick="toggleFunction()">CONTACT</a></li>
+					<li><a href="/blog.html" onclick="toggleFunction()">BLOG</a></li>
+		    </ul>
+		  </div>
+		</div>
+			<html>
+<link rel="icon" href="assets/images/icon.png">
+<link href="https://fonts.googleapis.com/css?family=Qwigley" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,500" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Work Sans', sans-serif !important;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+    font-size: 1em;
+    font-family: 'Work Sans', sans-serif !important;
+    font-weight: 300 !important;
+}
+
+#map {
+  height: 100%;
+}
+
+.arely {
+    width: 4.3em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 2s steps(50, end);
+    animation: type 2s steps(50, end);
+}
+
+.heart { animation: blink 1s infinite}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('assets/images/optimized-home.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("assets/images/macbook.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("assets/images/contact.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+    body, html {
+      overflow-x: hidden;
+    }
+}
+</style>
+<body>
+
+
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <p class="arely" class="w3-center w3-padding-xlarge" style="font-family: 'Qwigley', cursive !important;font-size: 4.5em;text-decoration: none !important; color: white;">Hi, I'm Arely<span class="heart"><i class="fa fa-heart" style="color: white; font-size: 0.4em; padding-left: 15px;"></i></span></p>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center" style="font-family: 'Qwigley', cursive !important; font-size: 3em; text-decoration: none; text-align: center !important; color: #2a1485;">About Me</h3>
+  <p class="w3-center" style="font-family: 'Work Sans', sans-serif !important; color: black; padding-bottom: 20px;">I'm a Web Developer, Artist, Math Geek, and Board Game Player.
+</br>"Fighting evil by moonlight. Winning love by daylight."</em></p>
+<p style="font-family: 'Work Sans', sans-serif !important;">I work full-time at a marketing & design studio called <a target="_blank" href="http://distillerymadison.com/" style="text-decoration: none; color: #2a1485;"><span style="font-weight: 500;">Distillery Marketing & Design</span></a> as their <b style="color: black; font-weight: 500;">Lead Web Developer</b>. I work on different types of websites using Drupal, WordPress, Liquid Templates, HTML5, CSS3, JavaScript/JQuery, PHP, SASS, and many more.</p>
+<p style="font-family: 'Work Sans', sans-serif !important;">Through here I've been able to develop amazing experience and creative projects to help me succeed my career as a web developer. I also gain experience from freelancing and small contract jobs.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p style="font-family: 'Work Sans', sans-serif !important; font-weight: 500 !important;"><b><i class="fa fa-user w3-margin-right"></i>Arely Miramontes</b></p><br>
+      <img src="assets/images/me2.jpg" class="w3-round w3-image  w3-hover-opacity-off" alt="Photo of Me" width="250" height="250">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>
+        I have a large list of hobbies, but I have two main ones (besides coding teehee). I love to draw, I do a lot of portraits and paintings. My favorite medium is chalk.
+      I've been drawing since I could hold a pencil. Drawing to me is like magic - I can create anything I want on a blank canvas,
+      and make it come to life.</br></br>
+
+      My other major hobby is Board Games. I got into board games thanks to my lovely bf. He taught me many games, and I got obsessed.
+      I starting competng in tournaments. 2 out of 3 I won! I competed in Dominion, which I got 5th place.
+      For Splendor and Dominion, I got 1st place!</br></br>
+
+      <span style="font-family: 'Work Sans', sans-serif !important; font-weight: 500 !important;"><b>My top favorites:</b></span></br>
+      Dominion</br>
+      Splendor</br>
+      Pandemic</br></br>
+      </p>
+    </div>
+  </div>
+    <h3 class="w3-center" style="font-family: 'Qwigley', cursive !important; font-size: 3em; text-decoration: none; text-align: center !important; color: #2a1485;">I am a Master Jedi at:</h3>
+  <p style="font-family: 'Work Sans', sans-serif !important;  letter-spacing: 0.5em;"><i class="fa fa-code" style="color: #2a1485;"></i>Web Development</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:90%"></div>
+  </div>
+  <p style="font-family: 'Work Sans', sans-serif !important; letter-spacing: 0.5em;"><i class="fa fa-laptop" style="color: #2a1485;"></i>Web Design</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:85%;"></div>
+  </div>
+  <p style="font-family: 'Work Sans', sans-serif !important;  letter-spacing: 0.5em;"><i class="fa fa-photo" style="color: #2a1485;"></i>Adobe Creative Suite</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:90%"></div>
+  </div>
+  <p style="font-family: 'Work Sans', sans-serif !important;  letter-spacing: 0.5em;"><i class="fa fa-drupal" style="color: #2a1485;"></i>Drupal</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:83%"></div>
+  </div>
+  <p style="font-family: 'Work Sans', sans-serif !important;  letter-spacing: 0.5em;"><i class="fa fa-wordpress" style="color: #2a1485;"></i>WordPress</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:80%"></div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16" >
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">2+</span><br>
+    Years
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">10+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">5+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Beers and Coffee
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey" style="font-family: 'Qwigley', cursive !important; font-size: 5em !important;">Portfolio</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center w3-animate-opacity" style="font-family: 'Qwigley', cursive !important; font-size: 3em; text-decoration: none; text-align: center !important; color: #2a1485;">My Development Portfolio</h3>
+    <p class="w3-center">I have worked with various coding languages/CMS that include: </br>
+               HTML5, CSS3, JavaScript, JQuery, PHP, Drupal, WordPress, SASS, Liquid Templates - Shopify & Jekyll, and many more.<br><br>
+
+
+               <i class="fa fa-drupal" aria-hidden="true" style="font-size: 40px; color: #2a1485;"></i>
+               <i class="fa fa-code" aria-hidden="true" style="font-size: 40px; color: #2a1485;"></i>
+               <i class="fa fa-html5" aria-hidden="true" style="font-size: 40px; color: #2a1485;"></i><br><br></p>
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m6" style="font-size: 0.9em; color: gray;">
+ <a href="lucille.html"><img src="assets/images/lucille.jpg" class="w3-hover-opacity" style="width: 100%; height: auto;"></a>
+    </div>
+
+    <div class="w3-col m6" style="font-size: 0.9em; color: gray;">
+      <a href="gardenexpo.html"><img src="assets/images/garden-expo.png" class="w3-hover-opacity" style="width: 100%; height: auto;"></a>
+    </div>
+
+    <!-- <div class="w3-col m3">
+      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+    <button class="w3-btn w3-light-grey w3-padding-xlarge" style="margin-top:64px">LOAD MORE</button>-->
+  </div>
+</div>
+
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center w3-animate-opacity" style="font-family: 'Qwigley', cursive !important; font-size: 3em; text-decoration: none; text-align: center !important; color: #2a1485;">My Art Portfolio</h3>
+  <p class="w3-center">Along with coding I work on my art a lot of my spare time. I do
+    traditional and digital art.<br><br>
+
+
+             <i class="fa fa-paint-brush" aria-hidden="true" style="font-size: 40px; color: #2a1485;"></i>
+             <i class="fa fa-deviantart" aria-hidden="true" style="font-size: 40px; color: #2a1485;"></i>
+             <i class="fa fa-pencil" aria-hidden="true" style="font-size: 40px; color: #2a1485;"></i><br><br></p>
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m4">
+      <img src="assets/images/taylor.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Taylor Swift as Princess Zelda">
+    </div>
+
+    <div class="w3-col m4">
+      <img src="assets/images/starlord.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Star Lord (Peter Quill) Chalk drawing">
+    </div>
+
+    <div class="w3-col m4">
+      <img src="assets/images/hermione.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hermione Granger (Emma Watson)">
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container ">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey" style="font-family: 'Qwigley', cursive !important; font-size: 5em !important;">Contact</span>
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center"  style="font-family: 'Qwigley', cursive !important; font-size: 3em !important; color: #2a1485;">Where I Work</h3>
+  <p class="w3-center" style="font-size: 1.1em; color: black;">Need some website or art magic done for you? Shoot me an email!</p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="map" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8 w3-container w3-section">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-rebel w3-hover-text-black" style="width:30px"></i> Arely Miramontes<br>
+        <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> Madison, WI, US<br>
+        <a href="mailto:arelymts@gmail.com" style="text-decoration: none;"><i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i><span style="color: #2a1485;"> arelymts@gmail.com</span><br></a>
+      </div>
+      <p>Wanna chat, have coffee, cheese or a beer? <i class="fa fa-beer" aria-hidden="true"></i>
+      <br>Leave me a note <i class="fa fa-heart" aria-hidden="true"></i>.</p>
+      <!-- <form action="form.asp" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-btn w3-black w3-right w3-padding w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form> -->
+      <div class="w3-xlarge w3-section">
+        <a target="_blank" href="https://www.facebook.com/ArelyMiramontes"><i class="fa fa-facebook-official w3-hover-text-indigo"></i></a>
+        <a target="_blank" href="https://www.instagram.com/arelyskywalker/"><i class="fa fa-instagram w3-hover-text-purple"></i></a>
+        <a target="_blank" href="assets/images/snapcode.png"><i class="fa fa-snapchat w3-hover-text-yellow"></i></a>
+        <a target="_blank" href="https://github.com/ArelySkywalker"><i class="fa fa-github w3-hover-text-red"></i></a>
+        <a target="_blank" href="https://twitter.com/ArelySkywalker"><i class="fa fa-twitter w3-hover-text-light-blue"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/arelymiramontes"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
+      </div>
+      <h3 class="w3-animate-opacity" style="font-family: 'Qwigley', cursive !important; font-size: 2.3em; text-decoration: none;">Love and Robots,</h3>
+      <img src="assets/images/signature.png" height="100px" width="auto"/>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-btn w3-padding w3-light-grey w3-hover-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+  <!-- <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 43.0731, lng:  -89.4012},
+      zoom: 12
+    });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzkhmnhSldnmEr7U32QYKBOwnAgGJxO8I&callback=initMap"
+async defer>
+</script>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+
+		<!-- <section id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<h2 class="section-heading">Let's Get In Touch!</h2>
+						<hr class="primary">
+						<p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+					</div>
+					<div class="col-lg-4 col-lg-offset-2 text-center">
+						<i class="fa fa-phone fa-3x wow bounceIn"></i>
+						<p>123-456-6789</p>
+					</div>
+					<div class="col-lg-4 text-center">
+						<i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+						<p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<!-- jQuery -->
+		<script src="/js/jquery.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="/js/bootstrap.min.js"></script>
+
+		<!-- Plugin JavaScript -->
+		<script src="/js/jquery.easing.min.js"></script>
+		<script src="/js/jquery.fittext.js"></script>
+		<script src="/js/wow.min.js"></script>
+
+		<!-- Custom Theme JavaScript -->
+		<script src="/js/creative.js"></script>
+		<!-- Add Google Maps -->
+		<script>
+		  var map;
+		  function initMap() {
+		    map = new google.maps.Map(document.getElementById('map'), {
+		      center: {lat: 43.0731, lng:  -89.4012},
+		      zoom: 12
+		    });
+		  }
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzkhmnhSldnmEr7U32QYKBOwnAgGJxO8I&callback=initMap"
+		async defer>
+		</script>
+
+		<script>
+		// Modal Image Gallery
+		function onClick(element) {
+		  document.getElementById("img01").src = element.src;
+		  document.getElementById("modal01").style.display = "block";
+		  var captionText = document.getElementById("caption");
+		  captionText.innerHTML = element.alt;
+		}
+
+		// Change style of navbar on scroll
+		window.onscroll = function() {myFunction()};
+		function myFunction() {
+		    var navbar = document.getElementById("myNavbar");
+		    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+		        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+		    } else {
+		        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+		    }
+		}
+
+		// Used to toggle the menu on small screens when clicking on the menu button
+		function toggleFunction() {
+		    var x = document.getElementById("navDemo");
+		    if (x.className.indexOf("w3-show") == -1) {
+		        x.className += " w3-show";
+		    } else {
+		        x.className = x.className.replace(" w3-show", "");
+		    }
+		}
+		</script>
+	</body>
+</html>

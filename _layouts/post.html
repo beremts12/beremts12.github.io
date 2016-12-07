@@ -1,0 +1,47 @@
+---
+layout: page
+---
+<link rel="icon" href="/assets/images/icon.png">
+<meta name="description" content="{{ page_description | escape }}" />
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<section id="blog">
+  <div class="container">
+    <div style="padding-bottom: 40px; padding-top: 40px;
+">
+    	<a id="read-more" href="/blog.html"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Back</a>
+    </div>
+    <div class="col-md-6 col-md-offset-3">
+      {{ content }}
+    </div>
+  </div>
+
+  <div class="share-page" style="padding-bottom: 40px;">
+  <h5>Share this post:</h5>
+  <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+  <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+    <a href="http://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&description={{ page.title }}" rel="nofollow" target="_blank" title="Share on Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&summary={{ page_description }}" rel="nofollow" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="http://www.reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="Share on Reddit"><i class="fa fa-reddit" aria-hidden="true"></i></a>
+
+</div>
+<div align="center" style="padding-bottom: 20px;">
+<div class="fb-comments" data-href="http://arelyskywalker.com/2016/11/17/female-developer.html" data-width="20%" data-numposts="5" align="center"></div>
+</div>
+  <div class="PageNavigation">
+  {% if page.previous.url %}
+    <a id="read-more" class="prev" href="{{page.previous.url}}"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> {{page.previous.title}}</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a id="read-more" class="next" href="{{page.next.url}}">{{page.next.title}} <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+  {% endif %}
+</div>
+
+</section>
