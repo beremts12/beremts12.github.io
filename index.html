@@ -203,31 +203,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 
 <!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;filter:grayscale(90%);-webkit-filter:grayscale(90%);"></div>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
-var myCenter = new google.maps.LatLng(30.2319797, -95.6815982);
-
-function initialize() {
-    var mapProp = {
-    center: myCenter,
-    zoom: 8,
-    scrollwheel: false,
-    draggable: false,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-};
-
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker = new google.maps.Marker({
-    position: myCenter,
-});
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443090.19576911954!2d-95.68216937356924!3d29.816880939588405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C+TX!5e0!3m2!1sen!2sus!4v1481139043811" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
 
