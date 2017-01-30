@@ -1,120 +1,103 @@
-/*Displaying images side-by-side... We’re also setting
-a width and height for the list items, images, captions
-and the paragraphs inside the captions. We position the
-captions over the images, but set their opacity to 0 so
-that they’re not visible.*/
-
-/*
-.photo-grid {
-	margin: 1em auto;
-	max-width: 2106px;
-	text-align: center;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+body {
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 }
-
-
-
-.photo-grid img {
+h1,
+h1+p {
+	margin: 30px 15px 0;
+	font-weight: 300;
+}
+h1+p a {
+	color: #333;
+}
+h1+p a:hover {
+	text-decoration: none;
+}
+h2 {
+	margin: 60px 15px 0;
+	padding: 0;
+	font-weight: 300;
+}
+h2 span {
+	margin-left: 1em;
+	color: #aaa;
+	font-size: 85%;
+}
+.column {
+	margin: 15px 15px 0;
+	padding: 0;
+}
+.column:last-child {
+	padding-bottom: 60px;
+}
+.column::after {
+	content: '';
+	clear: both;
 	display: block;
-	height: auto;
-	max-width: auto;
-}*/
-
-/*This is for the photo width and height*/
-
-.photo-grid figure {
-	height: auto;
-	overflow: hidden;
-	position: relative;
-	width: auto;
 }
-
-/*
-.photo-grid figcaption {
-	background: rgba(0,0,0,0.8);
-	color: white;
-	display: table;
-	height: 100%;
-	left: 0;
-	opacity: 0;
+.column div {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.column div:first-child {
+	margin-left: 0;
+}
+.column div span {
 	position: absolute;
-	right: 0;
-	top: 0;
-	z-index: 100;
-}*/
-
-/*
-.photo-grid figcaption p {
-	display: table-cell;
-	font-size: 1.5em;
-	position: relative;
-	top: -40px;
-	width: auto;
-	vertical-align: middle;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
 }
-*/
-
-/*Displaying text on hover*/
-
-.photo-grid article:hover figcaption {
+figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
 	opacity: 1;
 }
 
-/*Zoom the images in*/
 
-.photo-grid img {
-	display: block;
-	height: auto;
-	-webkit-transition: all 300ms;
-	-moz-transition: all 300ms;
-	transition: all 300ms;
-	max-width: 100%;
+/* Flashing */
+.hover13 figure:hover img {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
 }
-
-.photo-grid article:hover img {
-	-webkit-transform: scale(1.4);
-	-moz-transform: scale(1.4);
-	transform: scale(1.4);
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
 }
-
-/*Drop in text effect
-
-.photo-grid figcaption p {
-	display: table-cell;
-	font-size: 1.5em; COME BACK FOR THIS ONE
-	position: relative;
-	top: -100px;
-	width: 100%;
-	-webkit-transition: all 300ms ease-out;
-	-moz-transition: all 300ms ease-out;
-	transition: all 300ms ease-out;
-	vertical-align: middle;
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
 }
-
-.photo-grid article:hover figcaption p {
-	-moz-transform: translateY(40px);
-	-webkit-transform: translateY(40px);
-	transform: translateY(40px);
-}*/
-
-/*Fading in the caption
-
-
-.photo-grid figcaption {
-	background: rgba(0,0,0,0.8);
-	color: white;
-	display: table;
-	height: 100%;
-	left: 0;
-	opacity: 0;
-	position: absolute;
-	right: 0;
-	top: 0;
-	-webkit-transition: all 300ms;
-	-moz-transition: all 300ms;
-	transition: all 300ms;
-	-webkit-transition-delay: 100ms;
-	-moz-transition-delay: 100ms;
-	transition-delay: 100ms;
-	z-index: 100;
-}
-*/
